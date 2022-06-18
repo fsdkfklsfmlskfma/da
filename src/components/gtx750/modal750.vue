@@ -77,7 +77,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-
+  overflow: scroll;
   z-index: 9998;
 
   background: linear-gradient(180deg, #000000 42.19%, rgb(13, 117, 11) 100%);

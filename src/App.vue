@@ -1,4 +1,5 @@
 <template>
+ <title>Nvidia</title>
   <div id="root">
     <div class="first-row">
       <gtx1080 />
@@ -14,7 +15,6 @@
       <rtx3090 />
       <rtx3060 />
       <gtx970 />
-      
     </div>
   </div>
 </template>
@@ -41,37 +41,17 @@
       gtx1060,
       gtx1050,
       gtx770,
-      gtx750,
+      gtx750, 
       rtx3090,
       rtx3060,
       gtx970,
-
     },
   }
 </script>
 
 <style>
-@media screen and (max-width: 1256px) {
-  .first-row {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    column-gap: 5rem;
-    padding-top: 2%;
-    padding-right: 20%;
-    padding-left: 20%;
-  }
-}
-@media screen and (max-width: 730px) {
-  .second-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .row {
-    display: flex;
-    flex-direction: column;
-  }
-}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -96,6 +76,31 @@ body {
   margin-top: 3rem;
 }
 
+
+/* Mobile */
+  @media screen and (max-width: 1256px) {
+    .first-row, .second-row {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      column-gap: 5rem;
+      padding-top: 2%;
+      padding-right: 7%;
+      padding-left: 20%;
+    }
+  }
+
+@media screen and (max-width: 730px) {
+   #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-row, .second-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
 
